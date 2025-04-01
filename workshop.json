@@ -1,0 +1,8 @@
+{
+  "WorkshopId": 3456354093,
+  "Title": "Interjections",
+  "Description": "Library mod which allows conversations to feature interjections from other characters. Includes some additional conversation parts.\n\nFor documentation and source code, see: https://github.com/visceralfield/interjections",
+  "Tags": "Library,Script,Conversation",
+  "Visibility": "2",
+  "ImagePath": "preview.png"
+}
