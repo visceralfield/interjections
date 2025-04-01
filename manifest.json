@@ -1,0 +1,9 @@
+{
+    "id": "visceralfield_interjections",
+    "title": "Interjections",
+    "description": "Library mod which allows conversations to feature interjections from other characters. Includes some additional conversation parts.",
+    "version": "1.0.0",
+    "author": "{{r|visceralfield}}",
+    "tags": "Library", 
+    "PreviewImage": "preview.png"
+}

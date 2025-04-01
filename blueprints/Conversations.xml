@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+    <conversation ID="InterjectionTest">
+    	<start ID="Start">
+			<text>
+				Do I exist merely as a test case for a Caves of Qud mod?
+			</text>
+            <choice GotoID="IndrixInterjects" IfHaveFollower="Warden Indrix">What do you think, Indrix?</choice>
+			<choice GotoID="QGirlInterjects" IfPresent="Q Girl">...</choice>
+            <choice GotoID="Despair" IfNotPresent="Q Girl">...</choice>
+		</start>
+        <node ID="IndrixInterjects">
+            <text>
+                Grraah! You are mere demo material!
+            </text>
+            <choice GotoID="QGirlInterjects" IfPresent="Q Girl">...</choice>
+            <choice GotoID="Despair" IfNotPresent="Q Girl">...</choice>
+            <part Name="Interjection" Speaker="Warden Indrix"/>
+        </node>
+        <node ID="QGirlInterjects">
+            <text>
+                Yup! Lol!
+            </text>
+            <choice GotoID="AfterQGirlInterjects">
+                <text>...</text>
+            </choice>
+            <part Name="Interjection" Speaker="Q Girl" />
+            <part Name="ScreenShake" ShakeStart="0.3" ShakeEnd="0.3" />
+        </node>
+        <node ID="AfterQGirlInterjects">
+            <text>
+                Purple bitch!
+            </text>
+            <part Name="PlaySound" Sound="Sounds/Abilities/sfx_ability_mutation_flamingRay_attack" Volume="1"/>
+            <choice GotoID="Despair">
+                    <text>...</text>
+            </choice>
+        </node>
+        <node ID="Despair">
+            <text>
+                Dear Shekhinah! Why me! Please, you have to get me out of here! No, don't leave the conversation!
+            </text>
+            <choice Target="End">
+                <text>...</text>
+            </choice>
+        </node>
+    </conversation>
+</conversations>

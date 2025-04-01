@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+    <object Name="InterjectionTest" Inherits="Mechanimist">
+        <part Name="ConversationScript" ConversationID="InterjectionTest" />
+        <part Name="Render" DisplayName="Interjection Test" Tile="Creatures/caste_18.bmp" RenderString="m" ColorString="&amp;y" DetailColor="C" />
+    </object>
+</objects>
